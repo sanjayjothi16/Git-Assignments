@@ -1,5 +1,3 @@
-Vichu
-
 Difference between HTTP1.1 VS HTTP2
 * HTTP stands for hypertext transfer protocal 
 * HTTP/1.1 and HTTP/2 are two different versions of the Hypertext Transfer Protocol, 
