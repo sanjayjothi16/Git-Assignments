@@ -1,0 +1,87 @@
+Difference between HTTP1.1 VS HTTP2
+* HTTP stands for hypertext transfer protocal 
+* HTTP/1.1 and HTTP/2 are two different versions of the Hypertext Transfer Protocol, 
+  which is used for communication between clients and 
+  ervers on the World Wide Web. Here are some key differences between HTTP/1.1 and HTTP/2
+*multyplexing
+*header compression
+*server push
+*prioritization
+*connection handiling
+*binary protocal
+
+* Multiplexing:
+
+: HTTP/1.1: It uses a single connection for each request, meaning that each resource (like an image, CSS file, or script) requires a new                     connection. This can lead to a phenomenon known as the "head-of-line blocking," where the download of one resource can block others.
+: HTTP/2: It supports multiplexing, which means multiple requests and responses can be sent concurrently over a single connection. This helps in overcoming the head-of-line blocking issue and can significantly improve page load times.
+
+* Header Compression:
+
+: HTTP/1.1: Headers are not compressed, and redundant header information is sent with each request and response.
+: HTTP/2: It includes header compression, which reduces overhead by compressing repeated header fields.
+
+* Server Push:
+
+: HTTP/1.1: The server can only respond to client requests.
+: HTTP/2: It introduces server push, where the server can proactively send resources to the client before the client requests them. This can reduce latency and further improve page load times.
+
+* Prioritization:
+
+: HTTP/1.1: The priority of requests is not explicitly defined, and browsers often follow heuristics to determine which resources to load first.
+: HTTP/2: It introduces stream prioritization, allowing the server to prioritize the delivery of resources. This helps in loading more important resources first, improving the overall user experience.
+
+*Connection handaling:
+
+: HTTP/1.1: It requires multiple connections for parallelism, and each connection requires additional resources and time to set up.
+: HTTP/2: It uses a single connection for parallelism, reducing the overhead associated with multiple connections.
+
+* Binary Protocol:
+
+: HTTP/1.1: It uses a text-based protocol, which is human-readable but can be inefficient in terms of parsing and transmitting data.
+: HTTP/2: It uses a binary protocol, which is more efficient in terms of parsing and can be processed faster by machines.
+
+OBJECTS AND ITS INETRNAL REPRESENTATION IN (JAVA SCRIPT)
+
+*java script is the programming language of the web is known for its flexibility and versatility one of its fundamental features is the objects
+
+OBJECTS IN JAVASCRIPT
+*in javascript an object is a composite data type that allows you to group related data and functionality together. properties are key-value pairs that store data,while methods are functions associated with the object
+EXAMPLE OF AN OBJECT REPRESENTING A CAR 
+let car={
+  brand:"tesla",
+  model:"model 3",
+  year:"2022",
+  }
+  console.log(car);
+INTERNAL REPRESENTATION OF OBJECTS:
+behind the sences javascript engine use various data structure to represent object. the most common internal representation is the hash table. this data structure allows for fast retrival and insertion key-value pairs
+*OBJECT PROTOTYPE:
+javascript object also have an internal link to another called a prototyope.prototypes enable inheritance,allowing object to inherit properties and methods from other objects.this mechanism plays a crucial role in the language's objects-ordinated nature.
+* DYNAMIC NATURE OF OBJECT:
+one of the javascript strengths is its dynamic nature, and this extends to objectrs.properties can be added,modified or removed from objects runtime. this flexibity allows developers to adapt their data structures as needed.
+*CONCLUSION:
+understanding the internal representation of objects in javascript is essential for wrriting efficient and maintainable code.javascript use of hash tables,prototype,dynamic proporties makes it a powerful language for creating scalable and flixible applications.as you continue to explore javascript,mastering the intricacies of objects will empower you to leverage it full potential in building robust software solutions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
